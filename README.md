@@ -5,7 +5,11 @@ Using Pandas the csv files were read and stored in the form of data frames.<br /
 To aggregate different sources with similar indexes and features, First I created a new feature called ('ID') which is basically the year, state and county of each entry. Then both entries where aggregated into one single data frame.
 Based on the challenge the information on the location (ie state county etc.) and date is removed from training.<br />
 Graphs 1 and 2 are showing the statistical insight to the raw data. it can be seen that there is not a huge outlier distribution and none of the features have a huge correlation with the 'Yield' feature. Although several multicolinearity can be seen between features them selves. <br />
-![Image of Yaktocat](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_1.png)
+![First Graph](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_1.png) <br />
+Graph 1. Box Plot of the feature shows there is not a huge outliers pupulation. <br />
+![Seocnd Graph](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_2.png) <br />
+Graph 1. Correlation coefficient map of the features. <br />
+
 Now let’s have a look at the missing values:<br />
 
 
