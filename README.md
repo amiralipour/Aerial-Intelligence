@@ -2,13 +2,13 @@
 Here is my solution for the Aerial Intelligence data science challenge.<br />
 I used python with pre-existing libraries such as numpy, sktlearn and Pandas.<br />
 Using Pandas the csv files were read and stored in the form of data frames.<br />
-To aggregate different sources with similar indexes and features, First I created a new feature called ('ID') which is basically the year, state and county of each entry. Then both entries where aggregated into one single data frame.
+To aggregate different sources with similar indexes and features, first I created a new feature called ('ID') which is basically the year, state and county of each entry. Then both entries where aggregated into one single data frame.
 Based on the challenge the information on the location (ie state county etc.) and date is removed from training.<br />
 Graphs 1 and 2 are showing the statistical insight to the raw data. it can be seen that there is not a huge outlier distribution and none of the features have a huge correlation with the 'Yield' feature. Although several multicolinearity can be seen between features them selves. <br />
 ![First Graph](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_1.png) <br />
 Graph 1. Box Plot of the feature shows there is not a huge outliers pupulation. <br />
 ![Seocnd Graph](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_2.png) <br />
-Graph 1. Correlation coefficient map of the features. <br />
+Graph 2. Correlation coefficient map of the features. <br />
 
 Now let’s have a look at the missing values:<br />
 
@@ -50,4 +50,6 @@ Extra Trees Random Forest regression| 0.8540
 <br />
 
 It can be seen that regular linear method yields the lowest accuracy in matching the true values. On the other hand, the Extra Tress Random Forest utilizes bootstrap aggregating or bagging method on each of its subsets or so called trees which are chosen randomly (more detailed explanation can be found elsewhere).<br />
-Last graph shows the importance of each feature. I can be seen that the day in the season has the most importance while the mostly zero (precipTypeIsOther) has the zero importance. 
+Last graph shows the importance of each feature. It can be seen that the day in the season has the most importance while the mostly zero (precipTypeIsOther) has the zero importance. It should be mentioned that normalization of the data was initially done to prepare a better feed for linear methods, however machine learning methods such as random forset does not require such normalization due to their robustness.
+![Third Graph](https://github.com/amiralipour/Aerial-Intelligence/blob/first-try/figure_3.png) <br />
+Graph 3. Importance of each feature in the Extra Trees Random Forest regression. <br />
