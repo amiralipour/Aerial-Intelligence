@@ -1,5 +1,5 @@
 # Aerial-Intelligence
-Here is my solution for the Aerial Intelligence data science challenge.
+Here is my solution for the Aerial Intelligence data science challenge.<br />
 I used python with pre-existing libraries such as numpy, sktlearn and Pandas.
 Using Pandas the csv files were read and stored in the form of data frames.
 To aggregate different sources with similar indexes and features, First I created a new feature called ('ID') which is basically the year, state and county of each entry. Then both entries where aggregated into one single data frame.
@@ -7,11 +7,11 @@ Based on the challenge the information on the location (ie state county ..) and 
 Graphs 1 and 2 are showing the statistical insight to the raw data. it can be seen that there is not a huge outlier distribution and none of the features have a huge correlation with the 'Yield' feature. Although several multicolinearity can be seen between features them selves. 
 Now let’s have a look at the missing values:
 1. Missing values: 
-..*apparentTemperatureMax      0
-..*apparentTemperatureMin      0
-cloudCover                  0
-dewPoint                    0
-humidity                    0
+1.apparentTemperatureMax      0
+2.apparentTemperatureMin      0
+3.cloudCover                  0
+4.dewPoint                    0
+5.humidity                    0
 precipIntensity             1
 precipIntensityMax          1
 precipProbability           1
