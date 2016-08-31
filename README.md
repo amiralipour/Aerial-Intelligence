@@ -22,7 +22,7 @@ precipAccumulation    |      0
 precipTypeIsRain       |     0
 precipTypeIsSnow        |    0
 precipTypeIsOther        |   0
-pressure          |        | 605
+pressure          |         605
 temperatureMax     |         0
 temperatureMin      |        0
 visibility           |      46
@@ -35,10 +35,13 @@ Yield                     |  0
 It can be seen that the number of missing values versus the total number of entries is small so replacing them with their average value is not going to introduce any bias to our model.<br />
 Now lets arbitrarily split our data set into 80% train and 20% test and separately normalize them with respect to max-min so that the zeros are kept zero. <br />
 I tried several regression methods which failed to comply with the test results acceptably. Here are the R^2 values (as a measure for the good of fitness) of different methods applied:<br />
-R^2 for linear regression: 0.1034<br />
-R^2 for K-nn regression: 0.7800<br />
-R^2 for Random Forest regression: 0.8132<br />
-R^2 for Extra Trees Random Forest regression: 0.8540<br />
+Regressor type | R^2 value
+------------ | -------------
+linear regression | 0.1034
+K-nn regression | 0.7800
+Random Forest regression| 0.8132
+Extra Trees Random Forest regression| 0.8540
+<br />
 
 It can be seen that regular linear method yields the lowest accuracy in matching the true values. On the other hand, the Extra Tress Random Forest utilizes bootstrap aggregating or bagging method on each of its subsets or so called trees which are chosen randomly (more detailed explanation can be found elsewhere).<br />
 Last graph shows the importance of each feature. I can be seen that the day in the season has the most importance while the mostly zero (precipTypeIsOther) has the zero importance. 
