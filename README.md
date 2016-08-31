@@ -35,6 +35,7 @@ Yield                     |  0
 It can be seen that the number of missing values versus the total number of entries is small so replacing them with their average value is not going to introduce any bias to our model.<br />
 Now lets arbitrarily split our data set into 80% train and 20% test and separately normalize them with respect to max-min so that the zeros are kept zero. <br />
 I tried several regression methods which failed to comply with the test results acceptably. Here are the R^2 values (as a measure for the good of fitness) of different methods applied:<br />
+
 Regressor type | R^2 value
 ------------ | -------------
 linear regression | 0.1034
