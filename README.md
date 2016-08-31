@@ -6,9 +6,9 @@ To aggregate different sources with similar indexes and features, First I create
 Based on the challenge the information on the location (ie state county ..) and date is removed from training.
 Graphs 1 and 2 are showing the statistical insight to the raw data. it can be seen that there is not a huge outlier distribution and none of the features have a huge correlation with the 'Yield' feature. Although several multicolinearity can be seen between features them selves. 
 Now let’s have a look at the missing values:
-Missing values: 
-apparentTemperatureMax      0
-apparentTemperatureMin      0
+1. Missing values: 
+..*apparentTemperatureMax      0
+..*apparentTemperatureMin      0
 cloudCover                  0
 dewPoint                    0
 humidity                    0
